@@ -12,10 +12,10 @@ import (
 	"sync"
 	"syscall"
 
+	"fyne.io/systray"
 	"github.com/Anwert/fyne/v2/canvas"
 	"github.com/Anwert/fyne/v2/internal/painter"
 	"github.com/Anwert/fyne/v2/internal/svg"
-	"fyne-io/systray"
 
 	"github.com/Anwert/fyne/v2"
 	"github.com/Anwert/fyne/v2/theme"
