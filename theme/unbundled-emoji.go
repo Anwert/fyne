@@ -3,6 +3,6 @@
 
 package theme
 
-import "fyne.io/fyne/v2"
+import "github.com/Anwert/fyne/v2"
 
 var emoji fyne.Resource

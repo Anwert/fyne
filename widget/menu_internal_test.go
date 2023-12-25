@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/test"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/test"
 )
 
 func TestMenu_ItemTapped(t *testing.T) {

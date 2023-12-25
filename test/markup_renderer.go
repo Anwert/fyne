@@ -8,12 +8,12 @@ import (
 	"strings"
 	"unsafe"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/canvas"
+	col "github.com/Anwert/fyne/v2/internal/color"
+	"github.com/Anwert/fyne/v2/internal/driver"
+	"github.com/Anwert/fyne/v2/layout"
+	"github.com/Anwert/fyne/v2/theme"
 )
 
 type markupRenderer struct {

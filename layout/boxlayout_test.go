@@ -3,11 +3,11 @@ package layout_test
 import (
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/canvas"
+	"github.com/Anwert/fyne/v2/container"
+	"github.com/Anwert/fyne/v2/layout"
+	"github.com/Anwert/fyne/v2/theme"
 
 	"github.com/stretchr/testify/assert"
 )

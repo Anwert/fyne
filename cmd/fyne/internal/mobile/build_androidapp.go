@@ -19,9 +19,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"fyne.io/fyne/v2/cmd/fyne/internal/mobile/binres"
-	"fyne.io/fyne/v2/cmd/fyne/internal/templates"
-	"fyne.io/fyne/v2/cmd/fyne/internal/util"
+	"github.com/Anwert/fyne/v2/cmd/fyne/internal/mobile/binres"
+	"github.com/Anwert/fyne/v2/cmd/fyne/internal/templates"
+	"github.com/Anwert/fyne/v2/cmd/fyne/internal/util"
 	"golang.org/x/sys/execabs"
 	"golang.org/x/tools/go/packages"
 )
@@ -295,7 +295,7 @@ func buildAPK(out io.Writer, nmpkgs map[string]map[string]bool, libFiles []strin
 
 	for _, arch := range androidArchs {
 		toolchain := ndk.Toolchain(arch)
-		if nmpkgs[arch]["fyne.io/fyne/v2/internal/driver/mobile/exp/audio/al"] {
+		if nmpkgs[arch]["github.com/Anwert/fyne/v2/internal/driver/mobile/exp/audio/al"] {
 			dst := "lib/" + toolchain.abi + "/libopenal.so"
 			src := filepath.Join(gomobilepath, dst)
 			if _, err := os.Stat(src); err != nil {

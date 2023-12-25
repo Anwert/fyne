@@ -7,10 +7,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/driver/desktop"
+	"github.com/Anwert/fyne/v2/test"
+	"github.com/Anwert/fyne/v2/theme"
 )
 
 func TestCheckSize(t *testing.T) {

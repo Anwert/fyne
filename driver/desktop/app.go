@@ -1,6 +1,6 @@
 package desktop
 
-import "fyne.io/fyne/v2"
+import "github.com/Anwert/fyne/v2"
 
 // App defines the desktop specific extensions to a fyne.App.
 //

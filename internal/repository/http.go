@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/http"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage/repository"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/storage/repository"
 )
 
 // declare conformance with repository types

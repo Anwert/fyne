@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"time"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 )

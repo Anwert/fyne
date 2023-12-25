@@ -6,7 +6,7 @@ import (
 	"log"
 	"runtime"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 
 const floatSize = 4

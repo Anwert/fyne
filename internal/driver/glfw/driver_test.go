@@ -7,10 +7,10 @@ import (
 	"sync"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/widget"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/container"
+	"github.com/Anwert/fyne/v2/internal/cache"
+	"github.com/Anwert/fyne/v2/widget"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/storage"
 )
 
 type file struct {

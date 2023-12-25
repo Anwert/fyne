@@ -1,13 +1,13 @@
 package mobile
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/container"
+	"github.com/Anwert/fyne/v2/internal/cache"
+	"github.com/Anwert/fyne/v2/internal/driver/common"
+	"github.com/Anwert/fyne/v2/layout"
+	"github.com/Anwert/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2/widget"
 )
 
 type window struct {

@@ -16,7 +16,7 @@ import (
 
 	"golang.org/x/sys/execabs"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 
 const fontFace = "NotoSans"
@@ -59,7 +59,7 @@ func main() {
 
 	fmt.Println("Bundle fonts…")
 	f := &bytes.Buffer{}
-	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"fyne.io/fyne/v2\"\n\n")
+	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"github.com/Anwert/fyne/v2\"\n\n")
 	bundleFont(fontFace+"-Regular.ttf", "regular", f)
 	bundleFont(fontFace+"-Bold.ttf", "bold", f)
 	bundleFont(fontFace+"-Italic.ttf", "italic", f)
@@ -75,7 +75,7 @@ func main() {
 
 	fmt.Println("Bundle emoji…")
 	f = &bytes.Buffer{}
-	f.WriteString(fileHeader + "//go:build !no_emoji\n// +build !no_emoji\n\n\npackage theme\n\nimport \"fyne.io/fyne/v2\"\n\n")
+	f.WriteString(fileHeader + "//go:build !no_emoji\n// +build !no_emoji\n\n\npackage theme\n\nimport \"github.com/Anwert/fyne/v2\"\n\n")
 	bundleFont("EmojiOneColor.otf", "emoji", f)
 
 	err = writeFile("bundled-emoji.go", f.Bytes())
@@ -86,7 +86,7 @@ func main() {
 
 	fmt.Println("Bundle icons…")
 	f = &bytes.Buffer{}
-	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"fyne.io/fyne/v2\"\n\n")
+	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"github.com/Anwert/fyne/v2\"\n\n")
 	icon := path.Join(iconDir(), "fyne.png")
 	bundleFile("fyne-logo", icon, f)
 

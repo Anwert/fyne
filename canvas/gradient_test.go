@@ -7,9 +7,9 @@ import (
 	"image/draw"
 	"testing"
 
-	"fyne.io/fyne/v2/canvas"
-	internalTest "fyne.io/fyne/v2/internal/test"
-	"fyne.io/fyne/v2/test"
+	"github.com/Anwert/fyne/v2/canvas"
+	internalTest "github.com/Anwert/fyne/v2/internal/test"
+	"github.com/Anwert/fyne/v2/test"
 
 	"github.com/stretchr/testify/assert"
 )

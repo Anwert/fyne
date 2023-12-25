@@ -6,12 +6,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/canvas"
+	"github.com/Anwert/fyne/v2/internal/cache"
+	"github.com/Anwert/fyne/v2/internal/widget"
+	"github.com/Anwert/fyne/v2/test"
+	"github.com/Anwert/fyne/v2/theme"
 )
 
 func textRenderTexts(p fyne.Widget) []*canvas.Text {

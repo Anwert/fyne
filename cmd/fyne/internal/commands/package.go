@@ -19,9 +19,9 @@ import (
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 
-	"fyne.io/fyne/v2/cmd/fyne/internal/metadata"
+	"github.com/Anwert/fyne/v2/cmd/fyne/internal/metadata"
 )
 
 const (

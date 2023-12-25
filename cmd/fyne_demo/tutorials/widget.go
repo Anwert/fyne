@@ -6,15 +6,15 @@ import (
 	"net/url"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/cmd/fyne_demo/data"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/data/validation"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/canvas"
+	"github.com/Anwert/fyne/v2/cmd/fyne_demo/data"
+	"github.com/Anwert/fyne/v2/container"
+	"github.com/Anwert/fyne/v2/data/validation"
+	"github.com/Anwert/fyne/v2/driver/mobile"
+	"github.com/Anwert/fyne/v2/layout"
+	"github.com/Anwert/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2/widget"
 )
 
 const (

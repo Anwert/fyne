@@ -10,10 +10,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/storage"
+	"github.com/Anwert/fyne/v2/test"
+	"github.com/Anwert/fyne/v2/theme"
 )
 
 // Simulate being rendered by calling CreateRenderer() to update icon

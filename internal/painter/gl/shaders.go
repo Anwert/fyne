@@ -3,7 +3,7 @@
 
 package gl
 
-import "fyne.io/fyne/v2"
+import "github.com/Anwert/fyne/v2"
 
 var shaderLineFrag = &fyne.StaticResource{
 	StaticName: "line.frag",

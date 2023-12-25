@@ -17,8 +17,8 @@ import (
 	"github.com/godbus/dbus/v5"
 	"golang.org/x/sys/execabs"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/theme"
 )
 
 var once sync.Once

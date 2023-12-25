@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"text/template"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 
 const itemBindTemplate = `
@@ -912,7 +912,7 @@ func main() {
 import (
 	"bytes"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 `)
 	convertFile, err := newFile("convert")
@@ -924,7 +924,7 @@ import (
 import (
 	"fmt"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 `)
 	prefFile, err := newFile("preference")
@@ -936,7 +936,7 @@ import (
 import (
 	"sync/atomic"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 
 const keyTypeMismatchError = "A previous preference binding exists with different type for key: "
@@ -951,7 +951,7 @@ const keyTypeMismatchError = "A previous preference binding exists with differen
 import (
 	"bytes"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 `)
 
@@ -964,7 +964,7 @@ import (
 import (
 	"bytes"
 
-	"fyne.io/fyne/v2"
+	"github.com/Anwert/fyne/v2"
 )
 `)
 

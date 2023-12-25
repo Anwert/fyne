@@ -4,13 +4,13 @@ import (
 	"math"
 	"strconv"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/canvas"
+	"github.com/Anwert/fyne/v2/driver/desktop"
+	"github.com/Anwert/fyne/v2/driver/mobile"
+	"github.com/Anwert/fyne/v2/internal/cache"
+	"github.com/Anwert/fyne/v2/internal/widget"
+	"github.com/Anwert/fyne/v2/theme"
 )
 
 const noCellMatch = math.MaxInt32 // TODO make this MaxInt once we move to newer Go version

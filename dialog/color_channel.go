@@ -4,11 +4,11 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	internalwidget "fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/canvas"
+	internalwidget "github.com/Anwert/fyne/v2/internal/widget"
+	"github.com/Anwert/fyne/v2/theme"
+	"github.com/Anwert/fyne/v2/widget"
 )
 
 var _ fyne.Widget = (*colorChannel)(nil)

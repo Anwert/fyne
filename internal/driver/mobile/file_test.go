@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2/storage"
+	"github.com/Anwert/fyne/v2/storage"
 )
 
 func TestMobileFilter(t *testing.T) {

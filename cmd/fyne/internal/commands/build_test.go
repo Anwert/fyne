@@ -107,7 +107,7 @@ func Test_BuildWasmVersion(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"fyne.io/fyne/v2\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/Anwert/fyne/v2\"} }"),
 			},
 		},
 		{
@@ -137,7 +137,7 @@ func Test_BuildWasmReleaseVersion(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"fyne.io/fyne/v2\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/Anwert/fyne/v2\"} }"),
 			},
 		},
 		{
@@ -174,7 +174,7 @@ func Test_BuildGopherJSReleaseVersion(t *testing.T) {
 			{
 				expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 				mockReturn: mockReturn{
-					ret: []byte("{ \"Module\": { \"Path\": \"fyne.io/fyne/v2\"} }"),
+					ret: []byte("{ \"Module\": { \"Path\": \"github.com/Anwert/fyne/v2\"} }"),
 				},
 			},
 			{
@@ -216,7 +216,7 @@ func Test_BuildWasmOldVersion(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"fyne.io/fyne/v2\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/Anwert/fyne/v2\"} }"),
 			},
 		},
 		{
@@ -239,7 +239,7 @@ func Test_BuildLinuxReleaseVersion(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"fyne.io/fyne/v2\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/Anwert/fyne/v2\"} }"),
 			},
 		},
 		{
@@ -269,9 +269,9 @@ type jsonTest struct {
 
 func Test_FyneGoMod(t *testing.T) {
 	jsonTests := []jsonTest{
-		{false, []byte(`{"Module": {"Path": "github.com/fyne-io/calculator"},"Go": "1.14",	"Require": [ { "Path": "fyne.io/fyne/v2","Version": "v2.1.4"} ] }`)},
-		{true, []byte(`{ "Module": {"Path": "fyne.io/fyne/v2"},"Require": [{ "Path": "test","Version": "v2.1.4"} ] }`)},
-		{true, []byte(`{"Module": {"Path": "github.com/fyne-io/calculator"},"Go": "1.14",	"Require": [ { "Path": "fyne.io/fyne/v2","Version": "v2.2.0"} ] }`)},
+		{false, []byte(`{"Module": {"Path": "github.com/fyne-io/calculator"},"Go": "1.14",	"Require": [ { "Path": "github.com/Anwert/fyne/v2","Version": "v2.1.4"} ] }`)},
+		{true, []byte(`{ "Module": {"Path": "github.com/Anwert/fyne/v2"},"Require": [{ "Path": "test","Version": "v2.1.4"} ] }`)},
+		{true, []byte(`{"Module": {"Path": "github.com/fyne-io/calculator"},"Go": "1.14",	"Require": [ { "Path": "github.com/Anwert/fyne/v2","Version": "v2.2.0"} ] }`)},
 	}
 
 	for _, j := range jsonTests {

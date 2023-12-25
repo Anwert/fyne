@@ -5,12 +5,12 @@ import (
 	"sync"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/scale"
+	"github.com/Anwert/fyne/v2"
+	"github.com/Anwert/fyne/v2/internal/app"
+	"github.com/Anwert/fyne/v2/internal/cache"
+	"github.com/Anwert/fyne/v2/internal/driver/common"
+	"github.com/Anwert/fyne/v2/internal/painter"
+	"github.com/Anwert/fyne/v2/internal/scale"
 )
 
 type funcData struct {
