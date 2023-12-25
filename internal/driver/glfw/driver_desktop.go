@@ -15,7 +15,7 @@ import (
 	"github.com/Anwert/fyne/v2/canvas"
 	"github.com/Anwert/fyne/v2/internal/painter"
 	"github.com/Anwert/fyne/v2/internal/svg"
-	"github.com/Anwert/systray"
+	"fyne-io/systray"
 
 	"github.com/Anwert/fyne/v2"
 	"github.com/Anwert/fyne/v2/theme"
