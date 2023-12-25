@@ -14,6 +14,7 @@ import (
 	"fyne.io/fyne/v2/internal/driver"
 	"fyne.io/fyne/v2/internal/driver/common"
 	"fyne.io/fyne/v2/internal/scale"
+	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
 const (
@@ -953,6 +954,7 @@ func (d *gLDriver) createWindow(title string, decorate bool) fyne.Window {
 	}
 	runOnMain(func() {
 		d.initGLFW()
+		glfw.WindowHint(glfw.TransparentFramebuffer, glfw.True)
 
 		ret = &window{title: title, decorate: decorate, driver: d}
 		// This queue is destroyed when the window is closed.
@@ -1010,4 +1012,8 @@ func isKeyModifier(keyName fyne.KeyName) bool {
 		keyName == desktop.KeyControlLeft || keyName == desktop.KeyControlRight ||
 		keyName == desktop.KeyAltLeft || keyName == desktop.KeyAltRight ||
 		keyName == desktop.KeySuperLeft || keyName == desktop.KeySuperRight
+}
+
+func (w *window) GetScreenPos() (x int, y int) {
+	return w.view().GetPos()
 }
