@@ -214,7 +214,7 @@ func (p *painter) drawTextureWithDetails(o fyne.CanvasObject, creator func(canva
 		p.ctx.BlendColor(0, 0, 0, alpha)
 		p.ctx.BlendFunc(constantAlpha, oneMinusConstantAlpha)
 	} else {
-		p.ctx.BlendFuncSeparate(srcAlpha, oneMinusSrcAlpha, one, oneMinusSrcAlpha)
+		p.ctx.BlendFunc(one, oneMinusSrcAlpha)
 	}
 	p.logError()
 
