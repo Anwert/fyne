@@ -14,7 +14,6 @@ import (
 	"github.com/Anwert/fyne/v2/internal/driver"
 	"github.com/Anwert/fyne/v2/internal/driver/common"
 	"github.com/Anwert/fyne/v2/internal/scale"
-	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
 const (
@@ -954,7 +953,6 @@ func (d *gLDriver) createWindow(title string, decorate bool) fyne.Window {
 	}
 	runOnMain(func() {
 		d.initGLFW()
-		glfw.WindowHint(glfw.TransparentFramebuffer, glfw.True)
 
 		ret = &window{title: title, decorate: decorate, driver: d}
 		// This queue is destroyed when the window is closed.

@@ -722,6 +722,7 @@ func (w *window) create() {
 			glfw.WindowHint(glfw.Resizable, glfw.True)
 		}
 		glfw.WindowHint(glfw.AutoIconify, glfw.False)
+		glfw.WindowHint(glfw.TransparentFramebuffer, glfw.True)
 		initWindowHints()
 
 		pixWidth, pixHeight := w.screenSize(w.canvas.size)

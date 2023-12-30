@@ -7,6 +7,7 @@ type context interface {
 	BindTexture(target uint32, texture Texture)
 	BlendColor(r, g, b, a float32)
 	BlendFunc(srcFactor, destFactor uint32)
+	BlendFuncSeparate(sfactorRGB uint32, dfactorRGB uint32, sfactorAlpha uint32, dfactorAlpha uint32)
 	BufferData(target uint32, points []float32, usage uint32)
 	Clear(mask uint32)
 	ClearColor(r, g, b, a float32)

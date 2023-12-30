@@ -49,7 +49,7 @@ func (p *painter) drawLine(line *canvas.Line, pos fyne.Position, frame fyne.Size
 	p.defineVertexArray(p.lineProgram, "vert", 2, 4, 0)
 	p.defineVertexArray(p.lineProgram, "normal", 2, 4, 2)
 
-	p.ctx.BlendFunc(srcAlpha, oneMinusSrcAlpha)
+	p.ctx.BlendFuncSeparate(srcAlpha, oneMinusSrcAlpha, one, oneMinusSrcAlpha)
 	p.logError()
 
 	colorUniform := p.ctx.GetUniformLocation(p.lineProgram, "color")
@@ -112,7 +112,7 @@ func (p *painter) drawRectangle(rect *canvas.Rectangle, pos fyne.Position, frame
 	p.defineVertexArray(program, "vert", 2, 4, 0)
 	p.defineVertexArray(program, "normal", 2, 4, 2)
 
-	p.ctx.BlendFunc(srcAlpha, oneMinusSrcAlpha)
+	p.ctx.BlendFuncSeparate(srcAlpha, oneMinusSrcAlpha, one, oneMinusSrcAlpha)
 	p.logError()
 	// Vertex: END
 
@@ -214,7 +214,7 @@ func (p *painter) drawTextureWithDetails(o fyne.CanvasObject, creator func(canva
 		p.ctx.BlendColor(0, 0, 0, alpha)
 		p.ctx.BlendFunc(constantAlpha, oneMinusConstantAlpha)
 	} else {
-		p.ctx.BlendFunc(one, oneMinusSrcAlpha)
+		p.ctx.BlendFuncSeparate(srcAlpha, oneMinusSrcAlpha, one, oneMinusSrcAlpha)
 	}
 	p.logError()
 
