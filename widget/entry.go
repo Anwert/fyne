@@ -43,6 +43,7 @@ type Entry struct {
 	Text     string
 	// Since: 2.0
 	TextStyle   fyne.TextStyle
+	Alignment   fyne.TextAlign
 	PlaceHolder string
 	OnChanged   func(string) `json:"-"`
 	// Since: 2.0
@@ -923,6 +924,7 @@ func (e *Entry) placeholderProvider() *RichText {
 	style := RichTextStyleInline
 	style.ColorName = theme.ColorNamePlaceHolder
 	style.TextStyle = e.TextStyle
+	style.Alignment = e.Alignment
 	text := NewRichText(&TextSegment{
 		Style: style,
 		Text:  e.PlaceHolder,
@@ -1181,7 +1183,7 @@ func (e *Entry) syncSegments() {
 	}
 	e.textProvider().Wrapping = wrap
 	style := RichTextStyle{
-		Alignment: fyne.TextAlignLeading,
+		Alignment: e.Alignment,
 		ColorName: colName,
 		TextStyle: e.TextStyle,
 	}
@@ -1189,6 +1191,7 @@ func (e *Entry) syncSegments() {
 		style = RichTextStylePassword
 		style.ColorName = colName
 		style.TextStyle = e.TextStyle
+		style.Alignment = e.Alignment
 	}
 	e.textProvider().Segments = []RichTextSegment{&TextSegment{
 		Style: style,
@@ -1201,7 +1204,7 @@ func (e *Entry) syncSegments() {
 	e.placeholderProvider().Wrapping = wrap
 	e.placeholderProvider().Segments = []RichTextSegment{&TextSegment{
 		Style: RichTextStyle{
-			Alignment: fyne.TextAlignLeading,
+			Alignment: e.Alignment,
 			ColorName: colName,
 			TextStyle: e.TextStyle,
 		},
